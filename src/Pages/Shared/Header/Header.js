@@ -5,26 +5,26 @@ const Header = () => {
     return (
         <header className="p-4 text-gray-800">
             <div className="container flex justify-between h-16 text-white">
-                <h1 className='flex items-center text-2xl font-mono font-bold mx-10'>
+                <h1 className='flex items-center text-2xl font-mono font-extrabold mx-10'>
                     <Link to='/'><button>S H U T T E R</button></Link>
                 </h1>
-                <ul className="items-stretch hidden space-x-3 lg:flex">
+                <ul className="items-stretch hidden space-x-3 lg:flex font-semibold">
                     <li className="flex">
                         <a href="/" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">HOME</a>
                     </li>
                     <li className="flex">
-                        <a href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Link</a>
+                        <a href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">ABOUT</a>
                     </li>
                     <li className="flex">
-                        <a href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Link</a>
+                        <a href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">CONTACT</a>
                     </li>
                     <li className="flex">
                         <a href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Link</a>
                     </li>
                 </ul>
-                <div className="mr-2 flex-shrink-0 hidden lg:flex">
-                    <button className="self-center px-8 py-3 rounded">Sign in</button>
-                    <button className="self-center px-8 py-3 font-semibold rounded bg-teal-600 text-gray-50">Sign up</button>
+                <div className="mr-2 flex-shrink-0 hidden lg:flex mt-2">
+                    <Link to='/login'><button className="self-center px-8 py-3 rounded font-semibold btn-ghost">Login</button></Link>
+                    <Link to='/signup'><button className="self-center px-8 py-3 font-semibold rounded bg-teal-600 text-gray-50">Sign up</button></Link>
                 </div>
                 <div className="dropdown">
                     <button className="p-10 lg:hidden mr-10">

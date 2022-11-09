@@ -1,9 +1,11 @@
 import React from 'react';
+import useTitle from '../../../hooks/useTitle';
 import Services from '../../Services/LimitedServices';
 import Header from '../../Shared/Header/Header';
 import Banner from '../Banner/Banner';
 
 const Home = () => {
+    useTitle('Home');
     return (
         <div>
             <div className='hero min-h-screen'>
