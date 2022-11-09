@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header className="p-4 text-gray-800">
             <div className="container flex justify-between h-16 text-white">
-                <h1 className='flex items-center text-2xl font-mono font-bold mr-10'>
+                <h1 className='flex items-center text-2xl font-mono font-bold mx-10'>
                     <Link to='/'><button>S H U T T E R</button></Link>
                 </h1>
                 <ul className="items-stretch hidden space-x-3 lg:flex">

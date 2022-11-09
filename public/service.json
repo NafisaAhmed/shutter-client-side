@@ -1,0 +1,68 @@
+[
+    {
+        "service-name": "Wedding Photographer",
+        "img": "https://i.ibb.co/rpPdGMY/image.png",
+        "rating": 4.7,
+        "price": "$400",
+        "photographer": {
+            "name": "Robert Aly",
+            "shot-img": "https://i.ibb.co/8z36z53/lens1.jpg"
+        },
+        "details": "A wedding is not just the culmination of a couple’s commitment. It’s also the final product of much planning and preparation. Yet despite the best-laid plans, your big day won’t necessarily get a free pass from Murphy’s Law. Some chaos is almost inevitable at some point along the way. Luckily, when you hire a wedding photojournalist, you have someone on hand who is an expert in capturing those moments as memorable visual stories that you’ll enjoy for years to come."
+    },
+    {
+        "service-name": "Wildlife Photographer",
+        "img": "https://i.ibb.co/sQDQvd9/image.png",
+        "rating": 4.6,
+        "price": "$450",
+        "photographer": {
+            "name": "Prince Dakarta",
+            "shot-img": "https://i.ibb.co/370jBSC/image.png"
+        },
+        "details": "Wildlife photography is a demanding and competitive vocation. Traveling to isolated areas is expensive, as is the photographic equipment necessary for professional quality photos. The work itself is physically and mentally taxing, requiring patience and perfectionism. Because wild animals are wary of humans, wildlife photographers must use a hide to get close enough for a clear photograph. Hides are made of anything that conceals form and movement, such as a tiny tent with an opening for the camera, or a car with tinted windows."
+    },
+    {
+        "service-name": "Fashion Photographer",
+        "img": "https://i.ibb.co/NnhqLPY/image.png",
+        "rating": 4.7,
+        "price": "$480",
+        "photographer": {
+            "name": "Callie Roan",
+            "shot-img": "https://i.ibb.co/G2VJsKK/image.png"
+        },
+        "details": "A camera captures moments and conveys them much more effectively than words can ever attempt to. The right kind of photograph can speak volumes about a certain subject. The same holds true for fashion photography. Fashion photography is that wonderful branch of photography that focuses specifically on 'fashion'. The trained eye of a skilled fashion photographer can work wonders for a fashion accessory, model or a show, and add to its beauty. This report seeks to study all about the field of fashion photography, including its evolution, the nitty-gritties of the life of a fashion photographer, the career as well as the scope."
+    },
+    {
+        "service-name": "Sports Photographer",
+        "img": "https://i.ibb.co/RH5d6M8/image.png",
+        "rating": 4.5,
+        "price": "$500",
+        "photographer": {
+            "name": "Klint Fero",
+            "shot-img": "https://i.ibb.co/MB69kwC/image.png"
+        },
+        "details": "The life of a sports photographer can be quite lonely, traveling from event to event, often spending nights in hotels and motels. It can also involve flying or driving long distances. While this may initially seem to be a great life to lead often there is nothing more that a sports photographer looks forward to than getting a good night’s rest in their own bed"
+    },
+    {
+        "service-name": "Travel Photographer",
+        "img": "https://i.ibb.co/2MnPbJ9/image.png",
+        "rating": 4.8,
+        "price": "$430",
+        "photographer": {
+            "name": "Milli Printo",
+            "shot-img": "https://i.ibb.co/SfMZVtm/image.png"
+        },
+        "details": "Travel photography is an alluring genre. The thought of getting paid to explore and discover the world is one that most photographers have entertained. In this article, I touch on an uncomfortable truth about travel photography and present seven tips based on this truth. I’ve been a full-time travel photographer for over five years. My income is based on clients commissioning me to create compelling imagery of destinations around the world which my clients use to provide a better service to their customers. I do not make any money from social media following or from workshops and photo tours."
+    },
+    {
+        "service-name": "E-commerce Photographer",
+        "img": "https://i.ibb.co/t8LDkzH/Image.png",
+        "rating": 4.7,
+        "price": "$600",
+        "photographer": {
+            "name": "Sophie Turner",
+            "shot-img": "https://i.ibb.co/hmhMbcH/image.png"
+        },
+        "details": "Product photography is nothing but business photography. The product photographer shoots the images to show the goods in the best light possible so that it resembles how it appears to the naked eye and appeal to the client. Marketing campaigns, product pages, and even social media postings can be benefited from product photography."
+    }
+]
