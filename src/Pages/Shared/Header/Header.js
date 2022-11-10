@@ -23,7 +23,7 @@ const Header = () => {
                         <a href="/services" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">SERVICES</a>
                     </li>
                     <li className="flex">
-                        <a href="/services" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">BLOGS</a>
+                        <a href="/blogs" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">BLOGS</a>
                     </li>
                     {
                         user?.email ?
@@ -59,6 +59,7 @@ const Header = () => {
                     </button>
                     <ul className="menu menu-compact dropdown-content mt-3 shadow bg-base-600 rounded-box items-center lg:hidden">
                         <li><Link to='/services'>SERVICES</Link></li>
+                        <li><Link to='/blogs'>BLOGS</Link></li>
                         {
                             user?.email ?
                                 <>
