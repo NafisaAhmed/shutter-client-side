@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 
 const Header = () => {
+    const { user, logOut } = useContext(AuthContext);
+    const handleLogOut = () => {
+        logOut()
+            .then()
+            .catch(err => console.error(err))
+    }
     return (
         <header className="p-4 text-gray-800">
             <div className="container flex justify-between h-16 text-white">
@@ -23,8 +30,15 @@ const Header = () => {
                     </li>
                 </ul>
                 <div className="mr-2 flex-shrink-0 hidden lg:flex mt-2">
-                    <Link to='/login'><button className="self-center px-8 py-3 rounded font-semibold btn-ghost">Login</button></Link>
-                    <Link to='/signup'><button className="self-center px-8 py-3 font-semibold rounded bg-teal-600 text-gray-50">Sign up</button></Link>
+                    {
+                        user?.email ?
+                            <Link><button onClick={handleLogOut} className="self-center px-8 py-3 font-semibold rounded bg-teal-600 text-gray-50">Sign Out</button></Link>
+                            :
+                            <>
+                                <Link to='/login'><button className="self-center px-8 py-3 rounded font-semibold btn-ghost">Login</button></Link>
+                                <Link to='/signup'><button className="self-center px-8 py-3 font-semibold rounded bg-teal-600 text-gray-50">Sign up</button></Link>
+                            </>
+                    }
                 </div>
                 <div className="dropdown">
                     <button className="p-10 lg:hidden mr-10">
@@ -37,8 +51,15 @@ const Header = () => {
 
                         <li><a>Item 3</a></li>
                         <div className='text-center'>
-                            <button className="px-6 py-3 rounded">Sign in</button>
-                            <button className=" px-6 py-3 font-semibold rounded bg-teal-600 text-gray-50">Sign up</button>
+                            {
+                                user?.email ?
+                                    <Link><button onClick={handleLogOut} className="self-center px-8 py-3 font-semibold rounded bg-teal-600 text-gray-50">Sign Out</button></Link>
+                                    :
+                                    <>
+                                        <Link to='/login'><button className="self-center px-8 py-3 rounded font-semibold btn-ghost">Login</button></Link>
+                                        <Link to='/signup'><button className="self-center px-8 py-3 font-semibold rounded bg-teal-600 text-gray-50">Sign up</button></Link>
+                                    </>
+                            }
                         </div>
                     </ul>
 

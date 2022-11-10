@@ -1,6 +1,7 @@
 import Main from "../../../Layout/Main";
 import Home from "../../Home/Home/Home";
 import Login from "../../Login/Login";
+import AddReview from "../../Services/AddReview";
 import FullServices from "../../Services/FullServices";
 import ServiceDetails from "../../Services/ServiceDetails";
 import SignUp from "../../SignUp/SignUp";
@@ -32,6 +33,11 @@ export const router = createBrowserRouter([
             {
                 path: '/signup',
                 element: <SignUp></SignUp>
+            },
+            {
+                path: '/review/:id',
+                element: <AddReview></AddReview>,
+                loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
             }
         ]
     }

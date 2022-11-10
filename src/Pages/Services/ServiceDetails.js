@@ -1,12 +1,23 @@
-import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link, useLoaderData, useNavigate } from 'react-router-dom';
 import Header from '../Shared/Header/Header';
 import { FaStar, FaStarHalf } from 'react-icons/fa'
 import useTitle from '../../hooks/useTitle';
+import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 
 const ServiceDetails = () => {
-    useTitle('Service Details')
-    const { service_name, rating, details, img, photographer } = useLoaderData();
+    useTitle('Service Details');
+    const { _id, service_name, rating, details, img, photographer } = useLoaderData();
+    const { user } = useContext(AuthContext);
+    const navigate = useNavigate();
+    const handleReviewPage = () => {
+        if (!user?.email) {
+            alert('Please login to add a review');
+        }
+        else {
+            navigate(`/review/${_id}`);
+        }
+    }
     return (
         <div className='bg-blue-200 text-center'>
             <Header></Header>
@@ -27,6 +38,9 @@ const ServiceDetails = () => {
                 <FaStarHalf className='mt-1 ml-2 text-yellow-600'></FaStarHalf>
             </div>
             {/* review section */}
+            <h1 className='my-16 font-light text-4xl'>Reviews</h1>
+            <button className='btn btn-outline' onClick={handleReviewPage}>Add review</button>
+
         </div>
     );
 };
