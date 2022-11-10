@@ -5,6 +5,7 @@ import AddReview from "../../Services/AddReview";
 import FullServices from "../../Services/FullServices";
 import MyReviews from "../../Services/MyReviews";
 import ServiceDetails from "../../Services/ServiceDetails";
+import UpdateReview from "../../Services/UpdateReview";
 import SignUp from "../../SignUp/SignUp";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
@@ -44,6 +45,10 @@ export const router = createBrowserRouter([
             {
                 path: '/myreviews',
                 element: <PrivateRoute><MyReviews></MyReviews></PrivateRoute>
+            },
+            {
+                path: '/update',
+                element: <PrivateRoute><UpdateReview></UpdateReview></PrivateRoute>
             }
         ]
     }

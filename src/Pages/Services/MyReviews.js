@@ -71,6 +71,7 @@ const MyReviews = () => {
                                     key={review._id}
                                     review={review}
                                     handleDelete={handleDelete}
+
                                 ></MyReviewDetails>)
                         }
                     </div>

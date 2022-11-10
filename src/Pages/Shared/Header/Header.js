@@ -24,9 +24,14 @@ const Header = () => {
                     </li>
                     {
                         user?.email ?
-                            <li className="flex">
-                                <a href="/myreviews" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">MY REVIEWS</a>
-                            </li>
+                            <>
+                                <li className="flex">
+                                    <a href="/myreviews" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">MY REVIEWS</a>
+                                </li>
+                                <li className="flex">
+                                    <a href="/addservice" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">ADD SERVICE</a>
+                                </li>
+                            </>
                             :
                             <></>
                     }
@@ -53,9 +58,14 @@ const Header = () => {
                         <li><Link to='/services'>SERVICES</Link></li>
                         {
                             user?.email ?
-                                <li className="flex">
-                                    <a href="/myreviews" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">MY REVIEWS</a>
-                                </li>
+                                <>
+                                    <li className="flex">
+                                        <a href="/myreviews" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">MY REVIEWS</a>
+                                    </li>
+                                    <li className="flex">
+                                        <a href="/addservice" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">ADD SERVICE</a>
+                                    </li>
+                                </>
                                 :
                                 <></>
                         }
