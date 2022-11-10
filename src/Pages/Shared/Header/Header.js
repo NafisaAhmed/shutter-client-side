@@ -22,6 +22,9 @@ const Header = () => {
                     <li className="flex">
                         <a href="/services" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">SERVICES</a>
                     </li>
+                    <li className="flex">
+                        <a href="/services" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">BLOGS</a>
+                    </li>
                     {
                         user?.email ?
                             <>

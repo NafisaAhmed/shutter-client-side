@@ -2,6 +2,7 @@ import Main from "../../../Layout/Main";
 import Home from "../../Home/Home/Home";
 import Login from "../../Login/Login";
 import AddReview from "../../Services/AddReview";
+import AddService from "../../Services/AddService";
 import FullServices from "../../Services/FullServices";
 import MyReviews from "../../Services/MyReviews";
 import ServiceDetails from "../../Services/ServiceDetails";
@@ -49,6 +50,10 @@ export const router = createBrowserRouter([
             {
                 path: '/update',
                 element: <PrivateRoute><UpdateReview></UpdateReview></PrivateRoute>
+            },
+            {
+                path: '/addservice',
+                element: <PrivateRoute><AddService></AddService></PrivateRoute>
             }
         ]
     }
