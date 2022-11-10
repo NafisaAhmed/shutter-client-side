@@ -29,7 +29,7 @@ export const router = createBrowserRouter([
             {
                 path: '/service/:id',
                 element: <ServiceDetails></ServiceDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
+                loader: ({ params }) => fetch(`https://shutters-server-theta.vercel.app/services/${params.id}`)
             },
             {
                 path: '/login',
@@ -42,7 +42,7 @@ export const router = createBrowserRouter([
             {
                 path: '/review/:id',
                 element: <PrivateRoute><AddReview></AddReview></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
+                loader: ({ params }) => fetch(`https://shutters-server-theta.vercel.app/services/${params.id}`)
             },
             {
                 path: '/myreviews',

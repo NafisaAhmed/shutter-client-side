@@ -11,7 +11,7 @@ const MyReviews = () => {
     const [reviews, setReviews] = useState([]);
     console.log(reviews);
     useEffect(() => {
-        fetch(`http://localhost:5000/myreviews?email=${user?.email}`, {
+        fetch(`https://shutters-server-theta.vercel.app/myreviews?email=${user?.email}`, {
             headers: {
                 authorization: `Bearer ${localStorage.getItem('shutter-token')}`
             }
@@ -32,7 +32,7 @@ const MyReviews = () => {
     const handleDelete = id => {
 
 
-        fetch(`http://localhost:5000/myreviews/${id}`, {
+        fetch(`https://shutters-server-theta.vercel.app/myreviews/${id}`, {
             method: 'DELETE',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('shutter-token')}`

@@ -21,7 +21,7 @@ const AddService = () => {
             details,
             rating
         }
-        fetch(`http://localhost:5000/services?email=${user?.email}`, {
+        fetch(`https://shutters-server-theta.vercel.app/services?email=${user?.email}`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
