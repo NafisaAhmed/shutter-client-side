@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { setAuthToken } from '../../api/auth';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 import useTitle from '../../hooks/useTitle';
 import Header from '../Shared/Header/Header';
@@ -21,6 +22,7 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
+                setAuthToken(user);
                 navigate(from, { replace: true });
             })
             .catch(err => console.error(err))
@@ -30,6 +32,7 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
+                setAuthToken(user);
                 navigate(from, { replace: true });
             })
             .catch(err => console.error(err))

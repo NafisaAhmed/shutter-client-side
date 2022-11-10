@@ -22,21 +22,24 @@ const Header = () => {
                     <li className="flex">
                         <a href="/services" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">SERVICES</a>
                     </li>
-                    <li className="flex">
-                        <a href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">About</a>
-                    </li>
-                    <li className="flex">
-                        <a href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Link</a>
-                    </li>
+                    {
+                        user?.email ?
+                            <li className="flex">
+                                <a href="/myreviews" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">MY REVIEWS</a>
+                            </li>
+                            :
+                            <></>
+                    }
+
                 </ul>
                 <div className="mr-2 flex-shrink-0 hidden lg:flex mt-2">
                     {
                         user?.email ?
-                            <Link><button onClick={handleLogOut} className="self-center px-8 py-3 font-semibold rounded bg-teal-600 text-gray-50">Sign Out</button></Link>
+                            <Link><button onClick={handleLogOut} className="self-center px-8 py-3 font-semibold rounded bg-teal-600 text-gray-50">SIGN OUT</button></Link>
                             :
                             <>
-                                <Link to='/login'><button className="self-center px-8 py-3 rounded font-semibold btn-ghost">Login</button></Link>
-                                <Link to='/signup'><button className="self-center px-8 py-3 font-semibold rounded bg-teal-600 text-gray-50">Sign up</button></Link>
+                                <Link to='/login'><button className="self-center px-8 py-3 rounded font-semibold btn-ghost">LOGIN</button></Link>
+                                <Link to='/signup'><button className="self-center px-8 py-3 font-semibold rounded bg-teal-600 text-gray-50">SIGN UP</button></Link>
                             </>
                     }
                 </div>
@@ -46,18 +49,24 @@ const Header = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
-                    <ul className="menu menu-compact dropdown-content mt-3 shadow bg-base-600 rounded-box items-center">
+                    <ul className="menu menu-compact dropdown-content mt-3 shadow bg-base-600 rounded-box items-center lg:hidden">
                         <li><Link to='/services'>SERVICES</Link></li>
-
-                        <li><a>Item 3</a></li>
+                        {
+                            user?.email ?
+                                <li className="flex">
+                                    <a href="/myreviews" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">MY REVIEWS</a>
+                                </li>
+                                :
+                                <></>
+                        }
                         <div className='text-center'>
                             {
                                 user?.email ?
-                                    <Link><button onClick={handleLogOut} className="self-center px-8 py-3 font-semibold rounded bg-teal-600 text-gray-50">Sign Out</button></Link>
+                                    <Link><button onClick={handleLogOut} className="self-center px-8 py-3 font-semibold rounded bg-teal-600 text-gray-50">SIGN OUT</button></Link>
                                     :
                                     <>
-                                        <Link to='/login'><button className="self-center px-8 py-3 rounded font-semibold btn-ghost">Login</button></Link>
-                                        <Link to='/signup'><button className="self-center px-8 py-3 font-semibold rounded bg-teal-600 text-gray-50">Sign up</button></Link>
+                                        <Link to='/login'><button className="self-center px-8 py-3 rounded font-semibold btn-ghost">LOGIN</button></Link>
+                                        <Link to='/signup'><button className="self-center px-8 py-3 font-semibold rounded bg-teal-600 text-gray-50">SIGN UP</button></Link>
                                     </>
                             }
                         </div>
