@@ -1,12 +1,12 @@
-# Getting Started with Create React App
+# Website Name
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Shutters
 
-## Available Scripts
+## Live Website Link
 
-In the project directory, you can run:
+https://shutters-service.web.app
 
-### `npm start`
+## Features of this website
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
