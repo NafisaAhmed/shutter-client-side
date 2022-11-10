@@ -1,4 +1,5 @@
 import Main from "../../../Layout/Main";
+import Blogs from "../../Blogs/Blogs";
 import Home from "../../Home/Home/Home";
 import Login from "../../Login/Login";
 import AddReview from "../../Services/AddReview";
@@ -54,6 +55,10 @@ export const router = createBrowserRouter([
             {
                 path: '/addservice',
                 element: <PrivateRoute><AddService></AddService></PrivateRoute>
+            },
+            {
+                path: '/blogs',
+                element: <Blogs></Blogs>
             }
         ]
     }

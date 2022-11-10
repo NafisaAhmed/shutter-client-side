@@ -3,6 +3,8 @@ import useTitle from '../../../hooks/useTitle';
 import Services from '../../Services/LimitedServices';
 import Header from '../../Shared/Header/Header';
 import Banner from '../Banner/Banner';
+import Teams from '../Teams';
+
 
 const Home = () => {
     useTitle('Home');
@@ -16,6 +18,8 @@ const Home = () => {
                 </div>
             </div>
             <Services></Services>
+            <Teams></Teams>
+
         </div>
     );
 };
