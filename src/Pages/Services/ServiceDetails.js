@@ -62,7 +62,7 @@ const ServiceDetails = () => {
                             reviews.map(review => <ReviewDetails
                                 key={review._id}
                                 review={review}
-                            ></ReviewDetails>)
+                            ></ReviewDetails>).reverse()
                         }
                     </div>
                 </div>
