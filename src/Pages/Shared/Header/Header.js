@@ -20,10 +20,10 @@ const Header = () => {
                         <a href="/" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">HOME</a>
                     </li>
                     <li className="flex">
-                        <a href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">ABOUT</a>
+                        <a href="/services" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">SERVICES</a>
                     </li>
                     <li className="flex">
-                        <a href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">CONTACT</a>
+                        <a href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">About</a>
                     </li>
                     <li className="flex">
                         <a href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Link</a>
@@ -47,7 +47,7 @@ const Header = () => {
                         </svg>
                     </button>
                     <ul className="menu menu-compact dropdown-content mt-3 shadow bg-base-600 rounded-box items-center">
-                        <li><a>Item 1</a></li>
+                        <li><Link to='/services'>SERVICES</Link></li>
 
                         <li><a>Item 3</a></li>
                         <div className='text-center'>

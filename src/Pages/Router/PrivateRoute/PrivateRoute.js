@@ -3,8 +3,11 @@ import { Navigate, useLocation } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 
 const PrivateRoute = ({ children }) => {
-    const { user } = useContext(AuthContext);
+    const { user, loading } = useContext(AuthContext);
     const location = useLocation();
+    if (loading) {
+        return <div className="w-10 h-10 border-4 border-dashed rounded-full animate-spin border-teal-600"></div>
+    }
     if (user) {
         return children;
     }
